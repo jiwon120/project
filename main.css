@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+html {
+    font-size: 16px;
+    --main-orange : #E74E25;
+}
+body{
+    font-family:'Noto Sans','Pretendard','SUIT','inter' ;
+    color: #262626;font-size: 1.6rem;
+}
+.container{
+    padding: 1rem;
+}
+.blind {
+    display: block;width: 1px;height: 1px;overflow: hidden;
+}
+.main-link ::before {position: absolute;}
+
+
