@@ -14,6 +14,82 @@ body{
 .blind {
     display: block;width: 1px;height: 1px;overflow: hidden;
 }
-.main-link ::before {position: absolute;}
+
+.about-txt {position: relative;}
+.about-txt ::after {
+    content: "\F5DE"; margin-left: 0.6rem;
+    font-family: "remixicon";font-size: 1rem;
+}
+
+main {margin-top: 12rem;}
+.index main {margin: 0;}
+section{padding: 14rem;}
+hgroup h2{font-size: 2.5rem;font-weight: 700;}
+hgroup p{font-size: 1.8rem;font-weight: 500;}
+
+#header{
+    position: fixed;width: 100%;top: 0;
+    z-index: 1000;color: #fff;
+    transition: all 0.5s;
+}
+#header .container{
+    display: flex;justify-content: space-between;
+    align-items: center;
+    height: 23rem;
+}
+#header h1 a {
+    display: block;width: 12.3rem;height: 4.6rem;
+    background: url(./img/logo.svg) no-repeat;
+    background-size: 100% auto;
+    transition: all 0.5s;
+}
+#gnb .dep1 {
+    display: flex;justify-content: center;
+}
+#gnb .dep1 li a {
+    font-size: 1.25rem;font-weight: 400;
+}
+#gnb .dep1 li {padding: 0 6.25rem;position: relative;}
+#gnb .dep2{display: none;align-items: center;}
+#gnb .dep2 li{
+    display:flex; flex-direction: column;align-items: center;
+    padding: 0 6.25rem;
+    position: absolute;
+    background: rgba(225, 225, 225, 0.8);color: #262626;
+}
+#gnb .dep1 li:hover a {
+    color: var(--main-orange);
+}
+#gnb .dep1 li:hover .dep2 li {
+    padding: 1.8rem 2.6rem;width: 10rem;
+    border-left: 1px solid #000;
+}
+#gnb .dep1 li:hover .dep2 {
+    display: block;border: 1px solid palegreen;}
+#gnb .dep1 li:hover .dep2 li a {
+    color: var(--main-orange);
+}
+.header-util {
+    display: flex;gap: 8rem;align-items: center;
+}
+.header-util .lang-wrap{position: relative;}
+.header-util .button {display: flex;gap: 0.8rem;font-size: 1.25rem; font-weight: 400;}
+.header-util .lang-wrap button ::after{
+    content: "\EA4E";font-family: 'remixicon';
+    transition: transform 0.3s;
+}
+.header-util .lang-wrap button.active ::after{
+    transform: rotate(180deg);
+}
+.header-util .lang-wrap ul{
+    display: none;flex-direction: column;gap: 1.6rem;
+    position: absolute;left: 50%;transform: translateX(-50%);
+    padding: 1.4rem 2.4rem;top: 3rem;
+    background: rgba(225, 225, 225, 0.3);border-radius: 1rem;
+    color: #262626;font-weight: 400;
+}
+
+
+
 
 
