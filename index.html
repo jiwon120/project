@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+
 </head>
 <body>
     <!-- <div id="skip-nav">
@@ -24,7 +25,7 @@
                 <nav id="gnb">
                     <ul class="dep1">
                         <li>
-                            <a href="#">법인소개</a>
+                            <a href="#about">법인소개</a>
                             <ul class="dep2">
                                 <li><a href="#">광장소개</a></li>
                                 <li><a href="#">연혁</a></li>
@@ -33,7 +34,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">최근소식</a>
+                            <a href="#news">최근소식</a>
                             <ul class="dep2">
                                 <li><a href="#">광장소식</a></li>
                                 <li><a href="#">언론보도</a></li>
@@ -51,13 +52,13 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">구성원</a>
+                            <a href="#members">구성원</a>
                             <ul class="dep2">
                                 <li><a href="#">구성원 소개</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">인재채용</a>
+                            <a href="#recruit">인재채용</a>
                             <ul class="dep2">
                                 <li><a href="#">채용공고</a></li>
                                 <li><a href="#">지원하기</a></li>
@@ -99,7 +100,7 @@
                     <div class="allmenu-popup">
                         <div class="allmenu-top">
                             <a href="#">
-                                <img src="/project./img/main logo.jpg" alt="Lee&Ko 법무법인(유)광장">
+                                <img src="/project/img/main logo.jpg" alt="Lee&Ko 법무법인(유)광장">
                             </a>
                             <li><a href="#">KOR</a></li>
                             <li><a href="#">ENG</a></li>
@@ -158,77 +159,78 @@
     </div>
     <main id="main">
         <div id="main-visual-wrap">
-            <div class="bg-img">
-                <img src="./img/mainpage.png" alt="메인페이지">
-            </div>            
-            <div class="search-wrap">
-                <strong>We protect your rights</strong>                
-                <form class="swiper-search">
-                    <input type="text" placeholder="변호사, 업무사례, 법률정보 등을 검색해보세요">
-                    <button type="submit">
-                        <i class="ri-search-line"></i>
-                        <span class="blind">검색하기</span>
-                    </button>
-                </form>                
+            <div class="container">
+                <div class="bg-img">
+                    <img src="./img/mainpage.png" alt="">
+                </div>            
+                <div class="search-wrap">
+                    <strong>We protect your rights</strong>                
+                    <form class="swiper-search">
+                        <input type="text" placeholder="변호사, 업무사례, 법률정보 등을 검색해보세요">
+                        <button type="submit">
+                            <i class="ri-search-line"></i>
+                            <span class="blind">검색하기</span>
+                        </button>
+                    </form>                
+                </div>
             </div>
         </div>
-        <section class="about-wrap">
+        <section id="about" class="about-wrap">
+            <h2>ABOUT 광장</h2>
             <div class="container">
                 <div class="about-content">
-                    <h2>ABOUT 광장</h2>
                     <a href="#" class="main-link">
-                        <!-- ::before => position :absolute -->
-                        <img src="./img/about_img1.png" alt="About광장이미지1">
-                        <div class="about-txt"><!-- position : relative-->
+                        <img src="./img/about_img1.png" alt="">
+                        <div class="about-txt">
                             <strong>
-                                <span>고객 맞춤형 서비스</span>
+                                <span>고객 맞춤형 서비스</span> <br>
                                 One-stop Service
                             </strong>
-                            <!-- <span class="link-icon">
+                            <button>
                                 <i class="ri-arrow-right-up-long-line"></i>
-                            </span> -->
+                            </button>
                         </div>
                     </a>
                     <a href="#" class="main-link">
                         <img src="./img/about_img2.jpg" alt="">
                         <div class="about-txt">
                             <strong>
-                                <span>사회적 책임과 직업윤리 준수</span>
+                                <span>사회적 책임과 직업윤리 준수</span> <br>
                                 social responsibility
                             </strong>
-                            <!-- <span class="link-icon">
+                            <button>
                                 <i class="ri-arrow-right-up-long-line"></i>
-                            </span> -->
+                            </button>
                         </div>
                     </a>
                     <a href="#" class="main-link">
                         <img src="./img/about_img3.png" alt="">
-                        <div class="about-txt">  
+                        <div class="about-txt">
                             <strong>
-                                <span>최고 수준의 법률 서비스</span>
+                                <span>최고 수준의 법률 서비스</span> <br>
                                 Premier Full Service
                             </strong>
-                            <!-- <span class="link-icon">
+                            <button>
                                 <i class="ri-arrow-right-up-long-line"></i>
-                            </span> -->
+                            </button>
                         </div>
                     </a>
                     <a href="#" class="main-link">
                         <img src="./img/about_img4.png" alt="">
                         <div class="about-txt">
                             <strong>
-                                <span>글로벌 서비스</span>
+                                <span>글로벌 서비스</span> <br>
                                 Global Service
                             </strong>
-                            <!-- <span class="link-icon">
+                            <button>
                                 <i class="ri-arrow-right-up-long-line"></i>
-                            </span> -->
+                            </button>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-        <section class="news-wrap">  
+        <section id="news" class="news-wrap">  
             <div class="container">
                 <div class="news-left">
                     <hgroup>
@@ -333,7 +335,7 @@
                 </div>
             </div>
         </section>
-        <section class="members-wrap">
+        <section id="members" class="members-wrap">
             <div class="container">
                 <div class="member-title">
                     <hgroup>
@@ -429,7 +431,7 @@
                 </div>
             </div>
         </section>
-        <section class="recruit-wrap">
+        <section id="recruit" class="recruit-wrap">
             <div class="bg-img">
                 <img src="./img/recruit.png" alt="">
             </div>
@@ -524,16 +526,69 @@
 
         window.addEventListener("scroll", toggleHeaderTransparent);
         window.addEventListener("load", toggleHeaderTransparent);
-        // search-wrap 토글
-        const searchWrap = document.querySelector(".header-util .search-wrap");
-        const searchBtn = searchWrap.querySelector("button");
 
-        searchBtn.addEventListener("click", function (e) {
+        document.addEventListener('DOMContentLoaded', function () {
+        const searchWrap = document.querySelector('.header-util .search-wrap');
+        const searchBtn = searchWrap.querySelector('button'); // 검색창 여는 버튼
+        const searchBox = searchWrap.querySelector('.search-box');
+        const searchForm = searchBox.querySelector('form');
+        const searchInput = searchForm.querySelector('input');
+
+        // 🔹 검색창 열기 (토글)
+        searchBtn.addEventListener('click', function (e) {
             e.preventDefault();
-            searchWrap.classList.toggle("active");
+            e.stopPropagation();
+            searchWrap.classList.toggle('active');
         });
 
-        // 검색창 외부 클릭 시 닫기
+        // 🔹 외부 클릭 시 검색창 닫기
+        document.addEventListener('click', function (e) {
+            if (!searchWrap.contains(e.target)) {
+            searchWrap.classList.remove('active');
+            }
+        });
+
+        // 🔹 내부 클릭 시 닫힘 방지
+        searchBox.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+
+        // 🔹 검색 실행 (엔터 키 또는 버튼 클릭)
+        searchForm.addEventListener('submit', function (e) {
+            const query = searchInput.value.trim();
+            if (!query) {
+            alert('검색어를 입력해주세요.');
+            e.preventDefault(); // 이동 방지
+            return;
+            }
+
+            // 🔹 이동 주소 설정 (예: /search?query=검색어)
+            searchForm.action = `/search?query=${encodeURIComponent(query)}`;
+            searchForm.method = 'GET'; // 새로고침되도록 기본 submit 사용 (여기선 e.preventDefault 안 씀)
+            // submit은 그대로 진행되어 페이지 이동됨
+        });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiperSearchForm = document.querySelector('.swiper-search');
+            const swiperSearchInput = swiperSearchForm.querySelector('input');
+
+            swiperSearchForm.addEventListener('submit', function (e) {
+                const query = swiperSearchInput.value.trim();
+                if (!query) {
+                    alert('검색어를 입력해주세요.');
+                    e.preventDefault();
+                    return;
+                }
+
+                // 이동할 주소 설정
+                swiperSearchForm.action = `/search?query=${encodeURIComponent(query)}`;
+                swiperSearchForm.method = 'GET';
+                // submit은 그대로 두면 form이 이동함
+            });
+        });
+
+
+
         const swiper = new Swiper('.members-swiper', {
             slidesPerView: 'auto',
             spaceBetween: 20,
@@ -549,20 +604,37 @@
         });
         let fixedTranslate = 0;
 
-        swiper.on('setTranslate', (translate) => {
-            // 첫 번째 슬라이드 위치 고정
-            if (!swiper.isBeginning && translate > fixedTranslate) {
-                swiper.setTranslate(fixedTranslate);
-            } else {
-                fixedTranslate = translate;
-            }
-        });
+        // swiper.on('setTranslate', (translate) => {
+        //     // 첫 번째 슬라이드 위치 고정
+        //     if (!swiper.isBeginning && translate > fixedTranslate) {
+        //         swiper.setTranslate(fixedTranslate);
+        //     } else {
+        //         fixedTranslate = translate;
+        //     }
+        // });
 
         function addSlide(html) {
             const currentTranslate = swiper.getTranslate();
             swiper.appendSlide(html);
             swiper.setTranslate(currentTranslate); // 추가 전 위치로 복원
         }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".news-tab ul li");
+        const contents = document.querySelectorAll(".news-contents .contbox");
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener("click", () => {
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            contents.forEach(c => c.classList.remove("active"));
+            contents[index].classList.add("active");
+            });
+        });
+        });
+</script>
+
     </script>      
 </body>
 </html>
